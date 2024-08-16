@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scale=no">
+    <title>Bio-data</title>
+    <link rel="icon" href="passport.jpg">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+        
+        .biodatabox {
+            margin-top: 50px;
+            width: 70%;
+            height: 100%;
+            padding: 50px;
+            position: relative;
+            border: 3px solid blueviolet;
+            border-radius: 1px 90px 1px 1px;
+        }
+        
+        .biodatabox::before {
+            width: 100%;
+            height: 100%;
+            margin: -50px;
+            position: absolute;
+            border-radius: 1px 90px 1px 1px;
+            content: "";
+            background: url(pastel.jpg);
+            background-size: 100% 100%;
+            opacity: .6;
+            z-index: -10;
+        }
+        
+        .img {
+            position: absolute;
+            margin: 20px;
+            right: 0;
+        }
+        
+        .img img {
+            backface-visibility: hidden;
+        }
+        
+        table {
+            width: 100%;
+            height: auto;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .hed {
+            text-align: center;
+            font-size: 40px;
+            color: rgb(47, 18, 179);
+            font-weight: 600;
+        }
+        
+        .heds {
+            padding-left: 10%;
+            font-size: 30px;
+            font-weight: 600;
+            font-style: oblique;
+            color: darkmagenta;
+            text-shadow: 15px 15px 40px white;
+        }
+        
+        .hedsa {
+            font-size: 30px;
+            font-weight: 600;
+            font-style: inherit;
+            color: rgb(247, 58, 11);
+            text-align: center;
+        }
+        
+        .field {
+            border: 3px solid rgb(55, 0, 255);
+            border-radius: 20px;
+        }
+        
+        .name {
+            color: rgb(14, 209, 63);
+            font-weight: 550;
+        }
+        
+        .ans {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="biodatabox">
+            <div class="img"><img src="passport.jpg" width="200" height="200"></div>
+            <table cellspacing="20px">
+                <tr colspan="2">
+                    <td colspan="2" class="hed">Bio-Data<br>_____<br><br><br></td>
+
+                </tr>
+                <tr colspan="2">
+                    <td colspan="2" class="heds"> Personal Detail : ---<br><br></td>
+                </tr>
+
+                <tr>
+                    <td class="given"> Name </td>
+                    <td class="ans b"> :-&nbsp; <span class="name">Y.V.S. Pallavi</span></td>
+                </tr>
+                <tr>
+                    <td class="given"> Qualification </td>
+                    <td class="ans"> :-&nbsp; Bachelors in Artificial Intelligence<br>&nbsp;&nbsp;Diploma in ECE</td>
+                </tr>
+                <tr>
+                    <td class="given"> Date of Birth </td>
+                    <td class="ans"> :-&nbsp; 12/07/2003</td>
+                </tr>
+                <tr>
+                    <td class="given"> Height </td>
+                    <td class="ans"> :-&nbsp; 5.4</td>
+                </tr>
+                <tr>
+                    <td class="given"> Color </td>
+                    <td class="ans"> :-&nbsp; Fair </td>
+                </tr>
+                <tr>
+                    <td class="given"> Blood Group </td>
+                    <td class="ans"> :-&nbsp; O+ </td>
+                </tr>
+                <tr>
+                    <td class="given"> Hobbies </td>
+                    <td class="ans"> :-&nbsp; Browsing Web, Minimal Drawing </td>
+                </tr>
+            </table>
+            <fieldset class="field">
+                <legend class="hedsa">&nbsp;&nbsp;-- : Family detail : --&nbsp;&nbsp;&nbsp;&nbsp;</legend>
+
+                <table cellspacing="20px">
+
+                    <tr>
+                        <td class="given"> Father name </td>
+                        <td class="ans"> :-&nbsp; Yadla Venkateswarlu </td>
+                    </tr>
+                    <tr>
+                        <td class="given"> Mother name </td>
+                        <td class="ans"> :-&nbsp; Yadla Usharani </td>
+                    </tr>
+
+                    <tr colspan="2">
+                        <td colspan="2" class="heds">Siblings :--</td>
+
+                    </tr>
+                    <tr>
+                        <td class="given"> Younger Brother </td>
+                        <td class="ans"> :-&nbsp; Yadla Srinivasulu </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <table cellspace="20px">
+                <tr>
+                    <td colspan="2" class="heds"><br> Contact Detail –<br></td>
+                </tr>
+                <tr>
+                    <td class="given"><br> Address </td>
+                    <td class="ans"> :-&nbsp; West street, Main Road, Kaluvoya, Nellore, AP</td>
+                </tr>
+                <tr>
+                    <td class="given"><br> Mobile No </td>
+                    <td class="ans"> :-&nbsp; 1)&nbsp;9876543210 &nbsp;&nbsp; 2)&nbsp;1234567890 </td>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>
